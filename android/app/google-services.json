@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "934866542445",
+    "firebase_url": "https://synkrama-51b92-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "synkrama-51b92",
+    "storage_bucket": "synkrama-51b92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934866542445:android:9adce2033fd58ab28a8464",
+        "android_client_info": {
+          "package_name": "com.example.synkrama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934866542445-humh9m7decjfjbr4f7p0f6hehbps7i0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRenFxHi3bfdcmsN1vpZrTeExXwxIH0Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934866542445-humh9m7decjfjbr4f7p0f6hehbps7i0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
