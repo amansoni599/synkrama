@@ -17,27 +17,27 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     emailController.dispose();
     super.dispose();
   }
-  
+
   // Reset Password Function
   Future passwordReset() async {
     try {
       await FirebaseAuth.instance
-        .sendPasswordResetEmail(email: emailController.text.trim());
-        showDialog(
-        context: context,
-        builder: (context) {
-          return const AlertDialog(
-            content: Text("' Password reset link sent! Check your email"),
-          );
-        });
+          .sendPasswordResetEmail(email: emailController.text.trim());
+      showDialog(
+          context: context,
+          builder: (context) {
+            return const AlertDialog(
+              content: Text("' Password reset link sent! Check your email"),
+            );
+          });
     } on FirebaseAuthException catch (e) {
       showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            content: Text(e.message.toString()),
-          );
-        });
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              content: Text(e.message.toString()),
+            );
+          });
     }
   }
 
@@ -48,6 +48,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       padding: const EdgeInsets.all(20.0),
       child: TextFormField(
         autofocus: false,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         controller: emailController,
         keyboardType: TextInputType.emailAddress,
         validator: (value) {

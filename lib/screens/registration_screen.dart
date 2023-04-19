@@ -33,6 +33,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Widget build(BuildContext context) {
     // email field
     final emailField = TextFormField(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       autofocus: false,
       controller: emailEditingController,
       keyboardType: TextInputType.emailAddress,
@@ -61,6 +62,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     // password field
     final passwordField = TextFormField(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       autofocus: false,
       obscureText: true,
       controller: passwordEditingController,
@@ -89,6 +91,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     // confirm password field
     final confirmPasswordField = TextFormField(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       autofocus: false,
       obscureText: true,
       validator: ((value) {
